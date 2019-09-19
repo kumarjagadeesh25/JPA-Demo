@@ -3,5 +3,3 @@ public class Delete{
 	 System.out.println("Delete This..");
  }
 }
-
-subhani
