@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="JPADemo" transaction-type="RESOURCE_LOCAL">
+		<class>com.zonray.Student</class>
+		<class>com.zonray.StudentAuto</class>
+		<class>com.zonray.StudentIdentity</class>
+		<class>com.zonray.StudentISequence</class>
+		<class>com.zonray.StudentTable</class>
+		<class>com.zonray.StudentSequence2</class>
+		<class>com.zonray.Employee</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:orcl"/>
+			<property name="javax.persistence.jdbc.user" value="jpa"/>
+			<property name="javax.persistence.jdbc.password" value="jpa"/>
+			<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+			<property name="javax.persistence.schema-generation.database.action" value="create"/>
+			<property name="eclipselink.logging.level" value="ALL"/>
+		</properties>
+	</persistence-unit>
+</persistence>
